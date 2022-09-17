@@ -1,0 +1,27 @@
+.flex {
+display:flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+.flex section {
+    flex: 1 1 250px;
+    background-color: rgb(187, 187, 127);
+    margin: 15px 20px;
+    padding: 15px;
+}
+main {
+    padding: 10px;
+}
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+h2 {
+    color: rgba(102, 125, 187, 0.836);
+    text-decoration: underline;
+    text-align: center;
+    font-family: 'shadows Into Light', cursive;
+}
+.imgFluid {
+    width: 100%;
+}
