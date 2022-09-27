@@ -46,8 +46,9 @@ footer {
     text-align: center;
     background-color: black;
     color: white;
-    position:relative;
     width: 100%;
+    align: absolute;
+
 }
 img {
     max-width: 100%;
