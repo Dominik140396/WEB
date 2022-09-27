@@ -1,0 +1,52 @@
+.d-flex {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+header, .divider {
+    background-image: url('https://images.unsplash.com/photo-1543791187-df796fa11835?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2198&q=80;');
+    min-height: 25vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    box-shadow: 1px 1px 6px inset #000;
+    color: white;
+
+}
+
+article {
+    min-height: 80vh;
+}
+.formFlex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+input {
+    padding: 5px;
+    border: 1px solid #cacaca;
+}
+body {
+    background-color: grey;
+}
+form {
+    max-width: 960px;
+    margin: 20px auto;
+}
+
+table {
+    max-width: 100%;
+    width: auto;
+}
+td, th {
+    padding: 5px;
+    border: 1px solid #ccc;
+
+}

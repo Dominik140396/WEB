@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulare</title>
+    <link rel="stylesheet" href="myStyle.css">
+</head>
+<body>
+    <nav>
+        <ul class="d-flex">
+            <li>
+                <a href="#form">Formulare</a>
+            </li>
+            <li>
+                <a href="#tabel">Tabellen</a>
+            </li>
+        </ul>
+    </nav>
+<header class="d-flex">
+    <h1>Formulare & Tabellen Übung</h1>
+</header>
+    <main>
+
+<article id="form">
+    <!-- Formular -->
+    <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend> Part 1</legend>
+
+            <div class="formFlex">
+                <label for="BspTextInput">Beispiel Text Input</label>
+                <input type="text" name="BspTextInput" id="BspTextInput"
+                    placeholder="Gib hier was ein" required>
+            </div>
+
+            <div class="formFlex">
+                <label for="BspMailInput">Beispiel Mail Input</label>
+                    <input type="email" name="BspMailInput" id="BspMailInput"
+                            placeholder="Mailadresse notwendig" required>
+            </div>
+
+            <div class="formFlex">
+                <label for="BspTelInput">Beispiel Tel Input</label>
+                <input type="tel" name="BspTelInput" id="BspTelInput"
+                       placeholder="Telefonnummer" required>
+            </div>
+
+            <div class="formFlex">
+                <label for="BspURLInput">Beispiel URL Input</label>
+                <input type="url" name="BspURLInput" id="BspURLInput"
+                       placeholder="Weblink" required>
+            </div>
+
+            <div class="formFlex">
+                <label for="BspNumberInput">Beispiel Nummer Input</label>
+                <input type="number" name="BspNumberInput" id="BspNumberInput">
+            </div>
+
+            <div class="formFlex">
+                <label for="BspColorInput">Beispiel Color Input</label>
+                <input type="color" name="BspColorInput" id="BspColorInput">
+            </div>
+
+            <div class="formFlex">
+                <label for="BspDateInput">Beispiel Datum Input</label>
+                <input type="date" name="BspDateinput" id="BspDateInput">
+            </div>
+
+            <div class="formFlex">
+                <label for="BspTime">Beispiel Time</label>
+                <input type="time" name="BspTimeInput" id="BspTime">
+            </div>
+
+            <div class="formFlex">
+                <label for="BspMonth">Beispiel Datum</label>
+                <input type="month" name="BspMonth" id="BspMonth">
+            </div>
+
+            <div class="formFlex">
+                <label for="BspFileInput">FileUpload</label>
+                <input type="file" name="BspFileinput" id="BspFileInput">
+            </div>
+
+            <div class="formFlex">
+                <label for="BspPW">Passwort</label>
+                <input type="passwort" name="BspPW" id="BspPW">
+            </div>
+
+        <div>
+            <div class="formFlex">
+                <label for="BspSearch">Search</label>
+                <input type="search" name="BspSearch" id="BspSearch">
+            </div>
+
+            <div class="formFlex">
+                <label for="BspRadio1">Radio 1</label>
+                <input type="radio" name="BspRadio" id="BspRadio1" checked>
+            </div>
+
+            <div class="formFlex">
+                <label for="BspRadio2">Radio 2</label>
+                <input type="radio" name="BspRadio" id="BspRadio2">
+            </div>
+
+            <div class="formFlex">
+                <label for="BspRadio3">Radio 3</label>
+                <input type="radio" name="BspRadio" id="BspRadio3">
+            </div>
+        </div>
+
+
+        <div class="formFlex">
+            <div>
+                <input type="Checkbox" id="Checkbox1" name="CheckboxBsp1">
+                <label for="Checkbox1">Checkbox 1</label>
+            </div>
+
+            <div>
+                <input type="Checkbox" id="Checkbox2" name="CheckboxBsp2">
+                <label for="Checkbox2">Checkbox 2</label>
+
+                <div>
+                    <input type="Checkbox" id="Checkbox3" name="CheckboxBsp3">
+                    <label for="Checkbox3">Checkbox 3</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="formFlex">
+            <label for="selectBsp">Select me</label>
+            <select id="selectBsp" name="selectBsp">
+                <option value="ich sollte">sein irgendwann</option>
+                <option value="ein Programmierer">oder so</option>
+            </select>
+        </div>
+
+        <div class="formFlex">
+            <label for="BspTextarea">Schreib was</label>
+            <textarea name="Bsptextarea" id="BspTextarea"></textarea>
+        </div>
+
+        <div class="formFlex">
+            <input type="text" list="intliste" name="interessen" id="interessen">
+            <datalist id="intliste">
+                <option value="Fußball" />
+                <option value="Handball" />
+                <option value="Tennis" />
+                <option value="Klettern" />
+            </datalist>
+        </div>
+
+
+
+            <input type="hidden" name="ichVersteckeMich" value="hideAndSeek">
+
+
+
+
+
+
+
+
+
+            <div class="">
+                <button type="button">Button</button>
+                <button type="reset">Reset</button>
+                <button type="submit">Absenden</button>
+            </div>
+
+        </fieldset>
+
+
+
+
+
+
+
+    </form>
+</article>
+<div class="divider"></div>
+<article>
+    <!-- Tabellen -->
+</article>
+    </main>
+</body>
+</html>
