@@ -1,0 +1,41 @@
+.header {
+    display: block;
+}
+nav {
+    background-color: darkgreen;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.8rem;
+}
+h1 {
+    font-size: 3rem;
+    font-weight: normal;
+    text-align: center;
+    padding: 2rem;
+    margin: 0;
+}
+nav ul {
+    margin: 0;
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+body {
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 120%;
+    font-family: sans-serif;
+    line-height: 1.4;
+    margin: 0;
+}
+.youtubeVideo {
+
+}
+
+.unsereArten {
+    border: 1px solid black;
+
+}
