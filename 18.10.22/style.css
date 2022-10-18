@@ -1,3 +1,14 @@
+:root {
+    --firstColor: #a15050;
+   --secondColor: #3b3333;
+
+}
+
+body {
+    background-color: var(--firstColor);
+    padding: 15px;
+}
+
 nav {
     background-color: black;
     padding: 15px;
@@ -23,10 +34,27 @@ nav li a {
 header {
     min-height: 25vh;
     background-image: url("pexels-stein-egil-liland-3408744.jpg");
+
     background-size: cover;
     background-position: center;
 }
+img {
+    max-width: 100%;
+}
+
+article {
+     margin: 25px auto;
+}
+
 .navButton { display: none; }
+
+@keyframes blinken {
+    0% { background-color: #5a5aaa; }
+    100% { background-color: chocolate; }
+}
+.animation {
+    animation: blinken 1s infinite alternate;
+}
 
 @media screen and (max-width: 560px) {
     header {
