@@ -1,16 +1,41 @@
-.header {
-    display: block;
+:root {
+    --navFooterCol: darkgreen;
+    --mainCol: #FFAE2D;
+    --secondCol: #E8D1B3;
 }
+.navButton { display: none; }
 
 nav {
-    background-color: darkgreen;
-
+    background-color: var(--navFooterCol);
+    padding: 15px;
 }
-nav a {
-    color: white;
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
     text-decoration: none;
     display: block;
-    padding: 0.8rem;
+    color: white;
+    text-align: center;
+}
+
+nav li a {
+    padding: 10px;
+    color: white;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.video {
+    justify-content: center;
+    padding: 50px;
+    display: flex;
+}
+main {
+    background-color:var(--mainCol);
+    margin-bottom: 50px;
 }
 h1 {
     font-size: 3rem;
@@ -18,11 +43,10 @@ h1 {
     text-align: center;
     padding: 2rem;
     margin: 0;
-    background-color:#E8D1B3;
+    background-color: var(--secondCol);
 }
-h2 {
+h2, h3 {
     font-size: 2rem;
-    font-weight: normal;
     text-align: center;
     padding: 2rem;
     margin: 0;
@@ -47,22 +71,21 @@ body {
     justify-content: left;
     margin: 5px;
     padding: 5px;
-    background-color: #E8D1B3;
+    background-color: var(--secondCol);
 }
 
 figure {
     position: relative;
 }
-.imgPosition{
-    width: 100%;
-    height: 950px;
+img {
+    max-width: 100%;
 }
 figcaption {
     position: absolute;
     bottom: 0;
     width: 100%;
     padding: 10px;
-    background-color: #FFAE2D;
+    background-color: var(--mainCol);
     box-sizing: border-box;
 }
 footer {
@@ -72,17 +95,30 @@ footer {
     z-index: -1;
 }
 
-main {
-    background-color:#FFAE2D;
-    margin-bottom: 50px;
-}
-
-.boxen {
-    display: flex;
+.hintergrund {
+    height: 25vh;
     background-image: url("wood.jpg");
     background-size: cover;
     border-style: solid;
-    border-width: 0px 0px 0px 0px;
-    padding: 0% 0% 0% 0%;
+    border-width: 0 0 0 0;
+    padding: 0 0 0 0;
     color: white;
+}
+.container{
+    position: relative;
+    width: 1200px;
+    height: 25vh;
+    margin: 240px auto;
+    background-color: transparent;
+
+}
+
+.container .box {
+    position: relative;
+    width: calc(178px - 30px);
+    height: calc(178px - 30px);
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+
 }

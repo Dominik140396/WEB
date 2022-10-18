@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="This is a page about an imaginary Zoo">
     <title>Zoo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="header">
-                <ul>
+    <nav class="navigation">
+        <button class="navButton" aria-expanded="false" aria-controls="nav-liste">Menü</button>
+            <ul class="flex" id="nav-liste">
                     <li><a href="index.html">Startseite</a></li>
                     <li><a href="news.html">Neuigkeiten</a></li>
                     <li><a href="park.html">Der Tierpark</a></li>
                     <li><a href="animals.html">Tiere</a></li>
                     <li><a href="shop.html">Ticketshop</a></li>
                     <li><a href="anfahrt.html">Anfahrt</a></li>
-                </ul>
-            </div>
-        </nav>
-            <h1>Willkommen in meinem Zoo!</h1>
+            </ul>
+    </nav>
+    <header>
+        <h1>Willkommen in meinem Zoo!</h1>
     </header>
 
 <main>
@@ -46,34 +47,45 @@
         </section>
     </article>
 
-    <article class="boxen">
-        <section>
-            <p>Öffnungszeiten</p>
+    <article class="hintergrund">
+        <div class="container">
 
-            <p>Eintrittspreise</p>
+                <div class="box">Öffnungszeiten</div>
+                <div class="box">Eintrittspreise</div>
+                <div class="box">Häufige Fragen</div>
 
-            <p>Anreise</p>
-
-            <p>Häufige Fragen</p>
-        </section>
+        </div>
     </article>
 
-</main>
+    <section>
+        <h3>Was Ihnen bei uns nicht passieren sollte</h3>
+        <article class="video">
+        <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/83DY67DpsMA"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </article>
+    </section>
 
+</main>
 <footer>
     <nav>
-        <div class="footer">
-            <ul>
+        <ul class="flex">
                 <li><a href="kontakt.html">Kontakt</a></li>
                 <li><a href="Impressum.html">Impressum</a></li>
                 <li><a href="Links.html">Links</a></li>
                 <li><a href="Datenschutz.html">Datenschutz</a></li>
-            </ul>
-        </div>
+        </ul>
     </nav>
 </footer>
-
-
-
+    <script>
+        const hamburger = document.querySelector('button[aria-expanded]');
+        function klappNav({ target }) {
+            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+            hamburger.setAttribute('aria-expanded', !expanded);
+        }
+        hamburger.addEventListener('click', klappNav);
+    </script>
 </body>
 </html>
