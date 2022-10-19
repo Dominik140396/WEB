@@ -3,8 +3,6 @@
     --mainCol: #FFAE2D;
     --secondCol: #E8D1B3;
 }
-.navButton { display: none; }
-
 nav {
     background-color: var(--navFooterCol);
     padding: 15px;
@@ -18,7 +16,6 @@ nav ul {
     color: white;
     text-align: center;
 }
-
 nav li a {
     padding: 10px;
     color: white;
@@ -64,7 +61,6 @@ body {
     line-height: 1.4;
     margin: 0;
 }
-
 .unsereArten {
     border: 1px solid black;
     display: flex;
@@ -73,7 +69,6 @@ body {
     padding: 5px;
     background-color: var(--secondCol);
 }
-
 figure {
     position: relative;
 }
@@ -96,7 +91,7 @@ footer {
 }
 
 .hintergrund {
-    height: 25vh;
+    height: 150px;
     background-image: url("wood.jpg");
     background-size: cover;
     border-style: solid;
@@ -104,21 +99,24 @@ footer {
     padding: 0 0 0 0;
     color: white;
 }
-.container{
-    position: relative;
-    width: 1200px;
-    height: 25vh;
-    margin: 240px auto;
-    background-color: transparent;
+.tabelle {
+    box-sizing: border-box;
+    font-size: 1rem;
+    border-collapse: collapse;
 
+    width: 100%;
 }
 
-.container .box {
-    position: relative;
-    width: calc(178px - 30px);
-    height: calc(178px - 30px);
-    float: left;
-    margin: 15px;
-    box-sizing: border-box;
+table.tabelle th {
+    background-color: var(--mainCol);
+    text-align: left;
+}
 
+.tabelle th,td {
+    padding: 12px 16px;
+}
+
+table.tabelle tbody tr {
+    border-bottom: 1px solid black;
+    background-color: var(--secondCol);
 }
