@@ -21,8 +21,96 @@
     <header>
       <h1>Kontaktinformationen</h1>
     </header>
-    
  <main>
+    <article action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Kontaktformular</legend>
+
+            <div class="formFlex">
+                <label for="select">Anrede</label>
+                <select id="select" name="select">
+                    <option value="Herr">Herr</option>
+                    <option value="Frau">Frau</option>
+                </select>
+            </div>
+
+            <div class="formFlex">
+                <label>Name</label>
+                <input type="text" name="name" id="Namensfeld"
+                       placeholder="Bitte geben sie ihren Namen ein" required>
+            </div>
+
+            <div class="formFlex">
+                <label>Email</label>
+                <input type="email" name="Email" id="MailInput"
+                       placeholder="Mailadresse notwendig" required>
+            </div>
+
+            <div class="formFlex">
+                <label>Besuchsdatum</label>
+                <input type="date" name="Dateinput" id="DateInput">
+            </div>
+
+            <div class="formFlex">
+                <label>Besuchszeit</label>
+                <input type="time" name="TimeInput" id="Time">
+            </div>
+
+            <div class="formFlex">
+                <label>Bewerten Sie Ihren Besuch</label>
+                <input type="number" name="NumberInput" id="NumberInput">
+            </div>
+
+            <div class="formFlex">
+                <label for="select">Würden Sie uns weiterempfehlen</label>
+                <select id="select1" name="select">
+                    <option value="JA">Ja</option>
+                    <option value="NEIN">Nein</option>
+                </select>
+            </div>
+
+            <div class="formFlex">
+                <label for="select">Welche Tierart hat Ihnen am besten gefallen</label>
+                <select id="select2" name="select">
+                    <option value="Elefant">Elefant</option>
+                    <option value="Tiger">Tiger</option>
+                    <option value="Erdmaennchen">Erdmännchen</option>
+                    <option value="Loewe">Löwe</option>
+                    <option value="Pinguin">Pinguin</option>
+                    <option value="Zebra">Zebra</option>
+                    <option value="Panda">Panda</option>
+                </select>
+            </div>
+
+            <div class="formFlex">
+                <label for="Textarea">Was Sie uns gerne sagen würden</label>
+                <textarea name="textarea" id="Textarea"></textarea>
+            </div>
+
+
+            <div class="formFlex">
+                <label for="select">Wie waren Sie hier</label>
+                <select id="select3" name="select">
+                    <option value="Allein">Allein</option>
+                    <option value="Familienausflug">Familienausflug</option>
+                    <option value="Seniorentrip">Seniorentrip</option>
+                    <option value="Gruppenausflug">Gruppenausflug</option>
+                    <option value="Ausflug mit Freunden">Ausflug mit Freunden</option>
+                </select>
+            </div>
+
+            <div class="">
+                <button type="button">Button</button>
+                <button type="reset">Reset</button>
+                <button type="submit">Absenden</button>
+            </div>
+
+
+
+
+        </fieldset>
+    </article>
+
 
 
 
