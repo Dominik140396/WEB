@@ -58,7 +58,7 @@
 
             <div class="formFlex">
                 <label>Bewerten Sie Ihren Besuch</label>
-                <input type="number" name="NumberInput" id="NumberInput">
+                <input type="number" min="1" max="10" name="NumberInput" id="NumberInput">
             </div>
 
             <div class="formFlex">
@@ -70,16 +70,17 @@
             </div>
 
             <div class="formFlex">
-                <label for="select">Welche Tierart hat Ihnen am besten gefallen</label>
-                <select id="select2" name="select">
-                    <option value="Elefant">Elefant</option>
-                    <option value="Tiger">Tiger</option>
-                    <option value="Erdmaennchen">Erdmännchen</option>
-                    <option value="Loewe">Löwe</option>
-                    <option value="Pinguin">Pinguin</option>
-                    <option value="Zebra">Zebra</option>
-                    <option value="Panda">Panda</option>
-                </select>
+                <label for="Tiere">Welches Tier hat Ihnen am besten gefallen</label>
+                <input type="text" list="TiereList" name="Tiere" id="Tiere">
+                <datalist id="TiereList">
+                    <option value="Elefant" />
+                    <option value="Tiger" />
+                    <option value="Erdmännchen" />
+                    <option value="Löwe" />
+                    <option value="Pinguin" />
+                    <option value="Zebra" />
+                    <option value="Panda" />
+                </datalist>
             </div>
 
             <div class="formFlex">
@@ -99,23 +100,12 @@
                 </select>
             </div>
 
-            <div class="">
-                <button type="button">Button</button>
+            <div class="formFlex">
                 <button type="reset">Reset</button>
                 <button type="submit">Absenden</button>
             </div>
-
-
-
-
         </fieldset>
     </article>
-
-
-
-
-
-
 
  </main>
     <footer>
