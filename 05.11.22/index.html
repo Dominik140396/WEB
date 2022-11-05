@@ -9,6 +9,180 @@
 
 </head>
 <body>
+<header>
+    <nav>
+        <ul class="flex">
+            <li>
+                <a href="#myDestination">Meine Destinationen</a>
+            </li>
+            <li>
+                <a href="#clima">Klimatabellen</a>
+            </li>
+            <li>
+                <a href="#contact">Kontakt</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Meine Reisen</h1>
+    <div class="slider">
+        <img class="mySlides" src="img/aegypten.jpg" alt="Ägypten">
+        <img class="mySlides" src="img/thailand.jpg" alt="Thailand">
+        <img class="mySlides" src="img/maritius.jpg" alt="Mauritius">
+        <img class="mySlides" src="img/bali.jpg" alt="Bali">
+    </div>
+</header>
+
+<main>
+    <article class="pt" id="myDestination">
+        <div class="flex">
+            <section class="destination border">
+                <h2>Ägypten</h2>
+                    <p>Ägypten ist ein Staat im nordöstlichen Afrika mit mehr als 100 Millionen Einwohnern.
+                        Ägypten ist ein Staat im nordöstlichen Afrika mit mehr als 100 Millionen Einwohnern.
+                        Ägypten ist ein Staat im nordöstlichen Afrika mit mehr als 100 Millionen Einwohnern.
+                        Ägypten ist ein Staat im nordöstlichen Afrika mit mehr als 100 Millionen Einwohnern.</p>
+            </section>
+            <section class="destination border">
+                <h2>Thailand</h2>
+                    <p>Thailand offiziell Königreich Thailand ist ein Staat in Südostasien. Er grenzt an Myanmar, Laos, Kambodscha, Malaysia, das Andamanische Meer.</p>
+            </section>
+            <section class="destination border">
+                <h2>Mauritius</h2>
+                    <p>Neben der Hauptinsel Mauritius mit der Hauptstadt Port Louis zählen Rodrigues, die Cargados-Carajos-Inseln sowie die Agalega-Inseln zum Staatsgebiet.</p>
+            </section>
+            <section class="destination border">
+                <h2>Bali</h2>
+                    <p>Bali ist eine zu Indonesien gehörende Insel im Indischen Ozean mit einem tropisch warmen Durchschnittsklima. Hauptstadt der Insel ist Denpasar.</p>
+            </section>
+
+        </div>
+    </article>
+
+    <article class="pt" id="clima">
+        <table>
+            <caption>Klimatabelle mit max Temperaturen</caption>
+            <thead>
+            <tr>
+                <th scope="col">Monate</th>
+                <th scope="col">Ägypten</th>
+                <th scope="col">Thailand</th>
+                <th scope="col">Mauritius</th>
+                <th scope="col">Bali</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-label="Monat">Januar</td>
+                <td data-label="Ägypten">24</td>
+                <td data-label="Thailand">32</td>
+                <td data-label="Mauritius">31</td>
+                <td data-label="Bali">30</td>
+            </tr>
+            <tr>
+                <td data-label="Monat">Februar</td>
+                <td data-label="Ägypten">24</td>
+                <td data-label="Thailand">33</td>
+                <td data-label="Mauritius">31</td>
+                <td data-label="Bali">30</td>
+            </tr>
+            <tr>
+                <td data-label="Monat">März</td>
+                <td data-label="Ägypten">25</td>
+                <td data-label="Thailand">34</td>
+                <td data-label="Mauritius">31</td>
+                <td data-label="Bali">30</td>
+            </tr>
+            <tr>
+                <td data-label="Monat">April</td>
+                <td data-label="Ägypten">26</td>
+                <td data-label="Thailand">35</td>
+                <td data-label="Mauritius">32</td>
+                <td data-label="Bali">32</td>
+            </tr>
+            <tr>
+                <td data-label="Monat">Mai</td>
+                <td data-label="Ägypten">27</td>
+                <td data-label="Thailand">33</td>
+                <td data-label="Mauritius">32</td>
+                <td data-label="Bali">32</td>
+            </tr>
+            <tr>
+                <td data-label="Monat">Juni</td>
+                <td data-label="Ägypten">29</td>
+                <td data-label="Thailand">34</td>
+                <td data-label="Mauritius">33</td>
+                <td data-label="Bali">33</td>
+            </tr>
+            </tbody>
+        </table>
+    </article>
+    <article class="pt" id="contact">
+        <section class="form border">
+            <h2>Kontaktanfrage</h2>
+            <form>
+                <div class="flex">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Dein Name">
+                </div>
+                <div class="flex">
+                    <label for="mail">Mail</label>
+                    <input type="email" id="mail" name="mail" placeholder="Deine Mailadresse">
+                </div>
+                <div class="flex">
+                    <label for="message">Deine Nachricht</label>
+                    <textarea id="message" name="message" rows="10"
+                              placeholder="Schreib mir was"></textarea>
+                </div>
+                <button type="button" class="btn-send">Absenden</button>
+            </form>
+        </section>
+    </article>
+</main>
+
+<a href="#top" class="top">
+    <img src="img/up-arrow.png" alt="To Top">
+</a>
+
+<footer>
+    <p>&copy; 2022 Abendkurs</p>
+</footer>
+
+
+<script>
+    let myIndex = 0;
+    // Script für Bilder Karusel
+    function carousel() {
+        let i;
+        let x = document.getElementsByClassName('mySlides');
+        // console.log(x);
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if(myIndex > x.length) { myIndex = 1; }
+        x[myIndex -1].style.display = 'block';
+        setTimeout(carousel,3000);
+    }
+    carousel();
+
+    // Script für Smooth Scrollen
+    let anchorSelector = 'a[href^="#"]';
+    let anchorList = document.querySelectorAll(anchorSelector);
+    anchorList.forEach(link => {
+       link.onclick = function (e) {
+           e.preventDefault();
+           let destination = document.querySelector(this.hash);
+            destination.scrollIntoView({
+                behavior: 'smooth'
+            })
+       }
+    });
+
+
+
+</script>
+
+
 
 </body>
 </html>
