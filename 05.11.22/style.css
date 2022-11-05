@@ -64,8 +64,8 @@ article {
 }
 
 .border {
-    border-top-left-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-top-left-radius: 15%;
+    border-bottom-right-radius: 15%;
     box-shadow: 1px 1px 6px #646464;
 }
 .pt { padding-top: 1%; }
