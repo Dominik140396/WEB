@@ -5,7 +5,9 @@
 }
 
 main {
-    margin-bottom: 57px;
+    margin-bottom: 100px;
+    background-color: var(--mainCol);
+    z-index: 2;
 }
 
 nav {
@@ -153,4 +155,5 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: -1;
 }
