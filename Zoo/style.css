@@ -3,10 +3,16 @@
     --mainCol: #FFAE2D;
     --secondCol: #E8D1B3;
 }
+
+main {
+    margin-bottom: 57px;
+}
+
 nav {
     background-color: var(--navFooterCol);
     padding: 15px;
 }
+
 nav ul {
     padding: 0;
     margin: 0;
@@ -16,24 +22,24 @@ nav ul {
     color: white;
     text-align: center;
 }
-nav li a {
+
+li a {
     padding: 10px;
     color: white;
 }
+
 .flex {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .video {
     justify-content: center;
     padding: 50px;
     display: flex;
 }
-main {
-    background-color:var(--mainCol);
-    margin-bottom: 50px;
-}
+
 h1 {
     font-size: 3rem;
     font-weight: normal;
@@ -42,55 +48,48 @@ h1 {
     margin: 0;
     background-color: var(--secondCol);
 }
+
 h2, h3 {
     font-size: 2rem;
     text-align: center;
     padding: 2rem;
     margin: 0;
 }
-nav ul {
+
+ul {
     margin: 0;
     display: flex;
-    list-style: none;
     text-align: center;
+    list-style-type: none;
+    text-decoration: none;
 }
+
 body {
     color: black;
     font-size: 120%;
     font-family: sans-serif;
     line-height: 1.4;
     margin: 0;
+    background-color: var(--mainCol);
 }
+
 .unsereArten {
     border: 1px solid black;
     display: flex;
     justify-content: left;
-    margin: 5px;
     padding: 5px;
     background-color: var(--secondCol);
 }
-figure {
-    position: relative;
-}
-img {
-    max-width: 100%;
-}
-figcaption {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    background-color: var(--mainCol);
-    box-sizing: border-box;
-}
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: -1;
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
 }
 
 .hintergrund {
+    margin-top: 50px;
     height: 150px;
     background-image: url("wood.jpg");
     background-size: cover;
@@ -100,18 +99,21 @@ footer {
     color: white;
 }
 
+.hintergrund a:hover {
+    color: var(--mainCol);
+}
+
+a:visited {
+    color: var(--secondCol);
+}
+
 .box {
     display: flex;
     float: left;
     box-sizing: border-box;
-    width: 32%;
+    width: 35%;
     margin-right: 2%;
     padding: 65px;
-
-}
-
-.box:last-child {
-    margin-right: 0;
 }
 
 .tabelle {
@@ -134,10 +136,21 @@ table.tabelle tbody tr {
     border-bottom: 1px solid black;
     background-color: var(--secondCol);
 }
+
+.mainCol {
+    background-color: var(--secondCol);
+}
+
 .formFlex {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 15px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

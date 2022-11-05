@@ -21,34 +21,30 @@
     <header>
         <h1>Willkommen in meinem Zoo!</h1>
     </header>
-
 <main>
     <article>
         <h2>Wir freuen uns auf Ihren Besuch</h2>
-            <section>
-                <figure>
-                    <img src="panda.jpg" class="imgPosition">
-                    <figcaption>Panda Bobo</figcaption>
-                </figure>
-        </section>
+                <div class="img">
+                    <img src="panda.jpg" alt="Panda" width="1200" height="700">
+                </div>
     </article>
-    <article>
-        <section class="unsereArten">
+    <article class="unsereArten">
             <h2>Was Sie bei uns erwartet</h2>
-                <ul>
-                    <li>Säugetiere</li>
-                    <li>Insekten</li>
-                    <li>Fische</li>
-                    <li>Vögel</li>
-                    <li>uvm.</li>
-                </ul>
-        </section>
+                <dl>
+                    <dd>Säugetiere</dd>
+                    <dd>Insekten</dd>
+                    <dd>Fische</dd>
+                    <dd>Vögel</dd>
+                    <dd>uvm.</dd>
+                </dl>
     </article>
 
     <article class="hintergrund">
-                <div class="box">Öffnungszeiten</div>
-                <div class="box">Eintrittspreise</div>
-                <div class="box">Häufige Fragen</div>
+        <ul>
+            <div class="box"><li><a href="Öffnungszeiten.html">Öffnungszeiten</a></li></div>
+            <div class="box"><li><a href="Eintrittspreise.html">Eintrittspreise</a></li></div>
+            <div class="box"><li><a href="Haeufige Fragen.html">Häufige Fragen</a><li></div>
+        </ul>
     </article>
 
     <section>
@@ -62,10 +58,11 @@
         </article>
     </section>
 
+
 </main>
 <footer>
     <nav>
-        <ul class="flex">
+        <ul class="flex" id="footer-list">
                 <li><a href="kontakt.html">Kontakt</a></li>
                 <li><a href="Impressum.html">Impressum</a></li>
                 <li><a href="Links.html">Links</a></li>
