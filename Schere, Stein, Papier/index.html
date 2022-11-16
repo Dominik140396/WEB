@@ -5,40 +5,42 @@
     <title>Schere, Stein, Papier</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<main>
-    <article class="rounds">
-        <div class="flex">
-            <label for="roundsCounter">Wie viele Runden willst du spielen ?</label>
-            <input type="number" id="roundsCounter" name="roundsCounter">
-        </div>
-        <button class="gameover" onclick="setRound()">
-            Runden setzen
-        </button>
-    </article>
-
-    <article class="flex game none">
-            <button class="btn" onclick="game('Schere')">
-                <img src="Schere.png" class="imgFluid" alt="Schere">
+    <main>
+        <article class="rounds">
+            <div class="flex">
+                <label for="roundsCounter">Wie viele Runden willst du spielen ?</label>
+                <input type="number" id="roundsCounter" name="roundsCounter">
+            </div>
+            <button class="gameover" onclick="setRound()">
+                Runden setzen
             </button>
-            <button class="btn" onclick="game('Stein')">
-                <img src="Stein.png" class="imgFluid" alt="Stein">
-            </button>
-            <button class="btn" onclick="game('Papier')">
-                <img src="Papier.png" class="imgFluid" alt="Papier">
-            </button>
-            <button class="btn" onclick="game('Brunnen')">
-                <img src="Brunnen.png" class="imgFluid" alt="Brunnen">
-            </button>
-    </article>
+        </article>
 
-    <article>
-        <div id="outputRounds" class="flex"></div>
-        <div id="output"></div>
-    </article>
-</main>
+        <article class="flex game none">
+                <button class="btn" onclick="game('Schere')">
+                    <img src="Schere.png" class="imgFluid" alt="Schere">
+                </button>
+                <button class="btn" onclick="game('Stein')">
+                    <img src="Stein.png" class="imgFluid" alt="Stein">
+                </button>
+                <button class="btn" onclick="game('Papier')">
+                    <img src="Papier.png" class="imgFluid" alt="Papier">
+                </button>
+                <button class="btn" onclick="game('Echse')">
+                    <img src="Echse.png" class="imgFluid" alt="Echse">
+                </button>
+                <button class="btn" onclick="game('Spock')">
+                    <img src="Spock.png" class="imgFluid" alt="Spock">
+                </button>
+        </article>
 
-
+        <article>
+            <div id="outputRounds" class="flex"></div>
+            <div id="output"></div>
+        </article>
+    </main>
 
 <script src="logic.js"></script>
 </body>
