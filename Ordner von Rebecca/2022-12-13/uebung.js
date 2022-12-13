@@ -1,7 +1,9 @@
 "use strict";
 
 
-function greetings(){
+/*
+ function greetings(){
+
     let name = prompt ("Gib deinen Namen ein");
     alert('Herzlich Willkommen ' + name);
     
@@ -11,7 +13,7 @@ function greetings(){
 
 
 /* Return Werte von Funktionen */
-
+/*
 function greetings2() {
     let name = prompt("Dein Vorname");
     let lastname = prompt("Dein Nachname");
@@ -29,6 +31,8 @@ for (let value of functionValue) {
 console.log(functionValue);
 
 /* Übergabeparameter von Funktionen */
+
+/*
 let user = prompt('Dein name');
 let age = prompt('Dein Alter');
 
@@ -38,6 +42,7 @@ function greetings3(username, age) {
 greetings3(user, age);
 
 /* Übergabe von Rückgabaparameter */
+/*
 function mathquestion(x) {
     let result = 2 * x * x + 5 * x + 7;
     return result;
@@ -49,6 +54,8 @@ document.write('<br>' + mathresult + '<br>');
 
 
 /* Fehlerbehandlung */
+
+/*
 let a = 1.5484646848965641456156;
 let x = prompt('Wie viele Stellen sollen angezeigt werden ?');
 
@@ -60,6 +67,9 @@ try {
     document.write(err.name);
     document.write(err.message);
 }
+
+
+*/
 
 
 
